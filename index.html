@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="intro.css">
+    <link rel="stylesheet" href="work.css">
+    <link rel="stylesheet" href="playground.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="overlay.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Notable&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    <script src="https://kit.fontawesome.com/83ff0e0a6f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="contents">
+        <h1 class="logo"><a href=""><img src="img/logo.jpg" alt=""></a></h1>
+    <input type="checkbox" class="menu-btn" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a href="#projects" class="scroll-link" data-target=".work_wrap">PROJECTS</a></li>
+            <li><a href="#playground" class="scroll-link" data-target=".pg_wrap">PLAYGROUND</a></li>
+            <li><a href="#about" class="scroll-link" data-target=".about_wrap">ABOUT ME</a></li>
+        </ul>
+    </div>
+    </header>
+    <!-- intro -->
+    <div class="space"></div>
+    <div class="intro_wrap">
+        <div class="motion">
+            <div class="txt hi"><h1>HI</h1></div>
+            <div class="txt im"><h1>I AM</h1></div>
+            <div class="txt min"><h1>MIN</h1></div>
+            <video autoplay loop muted playsinline>
+                <source src="img/3d_object.webm" type="video/webm">
+                <source src="img/3d_object.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+        <script>
+            const aniDuration = 1;
+            gsap.from('.txt', {
+            duration: aniDuration,
+            x: -window.innerWidth, // 화면 왼쪽 끝에서 시작
+            y: 0,
+            rotation: -360,
+            ease: 'elastic.out(0.5, 1)',
+            yoyo: true,
+            repeat: 0
+        });
+            
+            addEventListener('load', function() {
+                const targetRect = target.getBoundingClientRect();
+                const targetHalfWidth = targetRect.width / 2;
+                const targetHalfHeight = targetRect.height / 2;
+            })
+            </script>
+
+            <p class="based">Based in Seoul, Korea</p>
+            <div class="scroll-downs">
+                <p>scroll down</p>
+                <img src="img/down-arrow.png" 
+                id="arrow" class="animated bounce">
+            </div>
+        <div class="comment_box">
+            <div data-aos="fade-up" class="comment">
+                <h2>저는 어디에든 녹아들어 자유자재로 
+                사용될 수 있는 디자이너입니다. 주로  
+                UI/UX 디자인, 디지털디자인, 인터랙션 
+                디자인을 맡고 있습니다.</h2>
+            </div>
+                <div class="contact">
+                <ul>
+                    <li><a href=""><img src="img/telephone.png" alt=""></a></li>
+                    <li><a href=""><img src="img/envelope.png" alt=""></a></li>
+                    <li><a href=""><img src="img/instagram.png" alt=""></a></li>
+                    <li><a href=""><img src="img/behance.png" alt=""></a></li>
+                </ul>
+                </div>
+            
+            <div data-aos="fade-right" data-aos-delay="150" class="btn_wrap">
+            <button class="btn"><a href="#about" class="scroll-link" data-target=".about_wrap">About Me <i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i></a></button>
+            </div>
+        </div>
+    </div>
+    <!-- work -->
+    <div class="work_wrap">
+        <div class="num">
+        <img src="img/01.png" alt=""></div>
+            <div class="container">
+            <div data-aos="flip-up" data-aos-delay="200" class="title">
+                <h1 class="select">SELECT</h1>
+                <img src="img/object01.png" alt="">
+                <h1 class="WORK">WORK</h1>
+            </div>
+            <div class="gallery"> <!-- 슬라이더 -->
+                <div class="gallery-panel" data-overlay="overlay1">
+                    <div class="frame_tit"><p class="left">Gillette</p><p class="right">2024</p></div>
+                    <div class="frame_info">
+                        <img src="img/질레트.png" alt="Smiling Face">
+                        <p class="company"><span>Gillette Website</span><br> Web Design</p>
+                    </div>
+                </div>
+            
+                <div class="gallery-panel" data-overlay="overlay2">
+                    <div class="frame_tit"><p class="left">Ugleelab</p><p class="right">2024</p></div>
+                    <div class="frame_info">
+                        <img src="img/오늘수거.png" alt="Smiling Face">
+                        <p class="company"><span>ONL Application</span><br> App Design</p>
+                    </div>
+                </div>
+            
+                <div class="gallery-panel" data-overlay="overlay3">
+                    <div class="frame_tit"><p class="left">MONAMI</p><p class="right">2024</p></div>
+                    <div class="frame_info">
+                        <img src="img/모나미.png" alt="Smiling Face">
+                        <p class="company"><span>MONAMI Website</span><br> Web Design</p>
+                    </div>
+                </div>
+            </div>
+            </div> <!-- con -->
+    </div>
+    
+    <div id="overlay1" class="overlay-wrap">
+        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="content">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/질레트_one.png" loading="lazy" />
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/질레트_two.png" loading="lazy" />
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/질레트_three.png" loading="lazy" />
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/질레트_four.png" loading="lazy" />
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/질레트.png" loading="lazy" />
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        
+        <div class="dpbox details">
+            <div class="flex"> <!-- 첫번째 -->
+                <div class="box name"> 
+                    <h3>Gillette Website</h3>
+                </div>
+                <div class="box link">
+                    <img src="img/link.png" alt="" >
+                    <img src="img/link hover.png" alt="" class="hoverimg">
+                </div>
+                <div class="box close">
+                    <img src="img/x.png" alt="">
+                    <img src="img/x hover.png" alt="" class="hoverimg">
+                </div>
+            </div>
+            <div class="box info"> <!-- 두번째 -->
+                <div class="infoBox">
+                <div class="company">
+                    <p>COMPANY</p>
+                    <h4>Gillette</h4>
+                </div>
+                <div class="year">
+                    <p>YEAR</p>
+                    <h4>2024</h4>
+                </div>
+                <div class="type">
+                    <p>TYPE</p>
+                    <h4>Web</h4>
+                </div>
+            </div>
+            </div>
+            <div class="box describe">
+                <div class="scrollBox">
+                <div class="overview">
+                    <span>OVERVIEW</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae pariatur quo atque voluptatibus molestias accusamus odit, iure aspernatur tempore, corporis praesentium non exercitationem cum, nisi cupiditate laboriosam odio quas eligendi. <br>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non voluptas harum deserunt, temporibus nemo laborum neque ipsum minus quod porro sint accusamus fugiat totam fugit animi, eaque quae vitae facilis!</p>
+                </div>
+                <div class="contribution">
+                    <span>MY CONTRIBUTION</span>
+                    <div class="txtBox">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae pariatur quo atque,</p>
+                    </div>
+                    <div class="txtBox">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae pariatur quo atque,</p>
+                    </div>
+                    <div class="txtBox">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. voluptatibus molestias accusamus odit, iure aspernatur tempore, corporis praesentium non exercitationem cum, nisi cupiditate laboriosam odio quas eligendi.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="overlay2" class="overlay-wrap">
+        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="content">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/오늘수거_one.png" loading="lazy" />
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/오늘수거_two.png" loading="lazy" />
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/오늘수거_three.png" loading="lazy" />
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper(".content", {
+                lazy: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        </script>
+
+        <div class="dpbox details">
+            <div class="flex"> <!-- 첫번째 -->
+                <div class="box name"> 
+                    <h3>ONL Application</h3>
+                </div>
+                <div class="box link">
+                    <img src="img/link.png" alt="" >
+                    <img src="img/link hover.png" alt="" class="hoverimg">
+                </div>
+                <div class="box close">
+                    <img src="img/x.png" alt="">
+                    <img src="img/x hover.png" alt="" class="hoverimg">
+                </div>
+            </div>
+            <div class="box info"> <!-- 두번째 -->
+                <div class="infoBox">
+                <div class="company">
+                    <p>COMPANY</p>
+                    <h4>Ugleelab</h4>
+                </div>
+                <div class="year">
+                    <p>YEAR</p>
+                    <h4>2024</h4>
+                </div>
+                <div class="type">
+                    <p>TYPE</p>
+                    <h4>App</h4>
+                </div>
+            </div>
+            </div>
+            <div class="box describe">
+                <div class="scrollBox">
+                <div class="overview">
+                    <span>OVERVIEW</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae pariatur quo atque voluptatibus molestias accusamus odit, iure aspernatur tempore, corporis praesentium non exercitationem cum, nisi cupiditate laboriosam odio quas eligendi. <br>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non voluptas harum deserunt, temporibus nemo laborum neque ipsum minus quod porro sint accusamus fugiat totam fugit animi, eaque quae vitae facilis!</p>
+                </div>
+                <div class="contribution">
+                    <span>MY CONTRIBUTION</span>
+                    <div class="txtBox">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae pariatur quo atque,</p>
+                    </div>
+                    <div class="txtBox">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae pariatur quo atque,</p>
+                    </div>
+                    <div class="txtBox">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. voluptatibus molestias accusamus odit, iure aspernatur tempore, corporis praesentium non exercitationem cum, nisi cupiditate laboriosam odio quas eligendi.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="overlay3" class="overlay-wrap">
+        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="content">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/모나미_zero.png" loading="lazy" />
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/모나미_one.png" loading="lazy" />
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/모나미_two.png" loading="lazy" />
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/모나미_three.png" loading="lazy" />
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/모나미_four.png" loading="lazy" />
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/모나미_five.png" loading="lazy" />
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/모나미_full.png" loading="lazy" />
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper(".content", {
+                lazy: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        </script>
+
+        <div class="dpbox details">
+            <div class="flex"> <!-- 첫번째 -->
+                <div class="box name"> 
+                    <h3>MONAMI Website</h3>
+                </div>
+                <div class="box link">
+                    <img src="img/link.png" alt="" >
+                    <img src="img/link hover.png" alt="" class="hoverimg">
+                </div>
+                <div class="box close">
+                    <img src="img/x.png" alt="">
+                    <img src="img/x hover.png" alt="" class="hoverimg">
+                </div>
+            </div>
+            <div class="box info"> <!-- 두번째 -->
+                <div class="infoBox">
+                <div class="company">
+                    <p>COMPANY</p>
+                    <h4>MONAMI</h4>
+                </div>
+                <div class="year">
+                    <p>YEAR</p>
+                    <h4>2024</h4>
+                </div>
+                <div class="type">
+                    <p>TYPE</p>
+                    <h4>Web</h4>
+                </div>
+            </div>
+            </div>
+            <div class="box describe">
+                <div class="scrollBox">
+                <div class="overview">
+                    <span>OVERVIEW</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae pariatur quo atque voluptatibus molestias accusamus odit, iure aspernatur tempore, corporis praesentium non exercitationem cum, nisi cupiditate laboriosam odio quas eligendi. <br>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non voluptas harum deserunt, temporibus nemo laborum neque ipsum minus quod porro sint accusamus fugiat totam fugit animi, eaque quae vitae facilis!</p>
+                </div>
+                <div class="contribution">
+                    <span>MY CONTRIBUTION</span>
+                    <div class="txtBox">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae pariatur quo atque,</p>
+                    </div>
+                    <div class="txtBox">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae pariatur quo atque,</p>
+                    </div>
+                    <div class="txtBox">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. voluptatibus molestias accusamus odit, iure aspernatur tempore, corporis praesentium non exercitationem cum, nisi cupiditate laboriosam odio quas eligendi.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // 갤러리 패널 클릭 이벤트
+            const galleryPanels = document.querySelectorAll('.gallery-panel');
+            const overlays = document.querySelectorAll('.overlay-wrap');
+            const closeButtons = document.querySelectorAll('.box.close');
+    
+            galleryPanels.forEach(panel => {
+                panel.addEventListener('click', () => {
+                    const overlayId = panel.getAttribute('data-overlay');
+                    const overlay = document.getElementById(overlayId);
+                    if (overlay) {
+                        overlay.style.display = 'flex';
+                        setTimeout(() => {
+                            overlay.classList.add('active');
+                        }, 10); // 약간의 지연을 주어 display 속성 변경 후 transition이 적용되도록 함
+                    }
+                });
+            });
+    
+            // 닫기 버튼 클릭 이벤트
+            closeButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const overlay = button.closest('.overlay-wrap');
+                    if (overlay) {
+                        overlay.classList.remove('active');
+                        overlay.addEventListener('transitionend', () => {
+                            overlay.style.display = 'none';
+                        }, { once: true }); // transition이 끝난 후 display를 none으로 설정
+                    }
+                });
+            });
+    
+            // Swiper 초기화
+            var swiper = new Swiper(".content", {
+                lazy: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        });
+    </script>
+    
+
+    <!-- playground -->
+    <div class="pg_wrap">
+        <div class="num">
+            <img src="img/02.png" alt="">
+        </div>
+        <div class="container">
+            <div data-aos="flip-up" data-aos-delay="200" class="title">
+                <h1 class="select">PLAY</h1>
+                <img src="img/object02.png" alt="">
+                <h1 class="WORK">GROUND</h1>
+            </div>
+            <div class="wrapper">
+                <div class="parent">
+                    <div class="child bg_one" data-overlay="overlay4"></div>
+                    <div class="txt_box">
+                        <h3>배달의민족 Application</h3>
+                        <p>우아한형제들</p>
+                    </div>
+                </div>
+                <div class="parent">
+                    <div class="child bg_two" data-overlay="overlay5"></div>
+                    <div class="txt_box">
+                        <h3>Hyoum Website</h3>
+                        <p>한국화장품</p>
+                    </div>
+                </div>
+                <div class="parent">
+                    <div class="child bg_three" data-overlay="overlay6"></div>
+                    <div class="txt_box">
+                        <h3>None</h3>
+                        <p>None</p>
+                    </div>
+                </div>
+                <div class="parent">
+                    <div class="child bg_four" data-overlay="overlay7"></div>
+                    <div class="txt_box">
+                        <h3>None</h3>
+                        <p>None</p>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- container -->
+    </div>
+
+    <div id="overlay4" class="overlay-wrap">
+        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="content">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/배달의민족_one.png" loading="lazy" />
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/배달의민족_two.png" loading="lazy" />
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/배달의민족_three.png" loading="lazy" />
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <div class="dpbox details">
+            <div class="flex"> <!-- 첫번째 -->
+                <div class="box name"> 
+                    <h3>배달의민족 Application</h3>
+                </div>
+                <div class="box link">
+                    <img src="img/link.png" alt="" >
+                    <img src="img/link hover.png" alt="" class="hoverimg">
+                </div>
+                <div class="box close">
+                    <img src="img/x.png" alt="">
+                    <img src="img/x hover.png" alt="" class="hoverimg">
+                </div>
+            </div>
+            <div class="box info"> <!-- 두번째 -->
+                <div class="infoBox">
+                <div class="company">
+                    <p>COMPANY</p>
+                    <h4>우아한형제들</h4>
+                </div>
+                <div class="year">
+                    <p>YEAR</p>
+                    <h4>2023</h4>
+                </div>
+                <div class="type">
+                    <p>TYPE</p>
+                    <h4>App</h4>
+                </div>
+            </div>
+            </div>
+            <div class="box describe">
+                <div class="scrollBox">
+                <div class="overview">
+                    <span>OVERVIEW</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae pariatur quo atque voluptatibus molestias accusamus odit, iure aspernatur tempore, corporis praesentium non exercitationem cum, nisi cupiditate laboriosam odio quas eligendi. <br>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non voluptas harum deserunt, temporibus nemo laborum neque ipsum minus quod porro sint accusamus fugiat totam fugit animi, eaque quae vitae facilis!</p>
+                </div>
+                <div class="contribution">
+                    <span>MY CONTRIBUTION</span>
+                    <div class="txtBox">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae pariatur quo atque,</p>
+                    </div>
+                    <div class="txtBox">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae pariatur quo atque,</p>
+                    </div>
+                    <div class="txtBox">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. voluptatibus molestias accusamus odit, iure aspernatur tempore, corporis praesentium non exercitationem cum, nisi cupiditate laboriosam odio quas eligendi.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="overlay5" class="overlay-wrap">
+        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="content">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/효움_one.png" loading="lazy" />
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/효움_two.png" loading="lazy" />
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/효움_three.png" loading="lazy" />
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/효움_full.png" loading="lazy" />
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper(".content", {
+                lazy: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        </script>
+
+        <div class="dpbox details">
+            <div class="flex"> <!-- 첫번째 -->
+                <div class="box name"> 
+                    <h3>Hyoum Website</h3>
+                </div>
+                <div class="box link">
+                    <img src="img/link.png" alt="" >
+                    <img src="img/link hover.png" alt="" class="hoverimg">
+                </div>
+                <div class="box close">
+                    <img src="img/x.png" alt="">
+                    <img src="img/x hover.png" alt="" class="hoverimg">
+                </div>
+            </div>
+            <div class="box info"> <!-- 두번째 -->
+                <div class="infoBox">
+                <div class="company">
+                    <p>COMPANY</p>
+                    <h4>한국화장품</h4>
+                </div>
+                <div class="year">
+                    <p>YEAR</p>
+                    <h4>2023</h4>
+                </div>
+                <div class="type">
+                    <p>TYPE</p>
+                    <h4>Web</h4>
+                </div>
+            </div>
+            </div>
+            <div class="box describe">
+                <div class="scrollBox">
+                <div class="overview">
+                    <span>OVERVIEW</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae pariatur quo atque voluptatibus molestias accusamus odit, iure aspernatur tempore, corporis praesentium non exercitationem cum, nisi cupiditate laboriosam odio quas eligendi. <br>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non voluptas harum deserunt, temporibus nemo laborum neque ipsum minus quod porro sint accusamus fugiat totam fugit animi, eaque quae vitae facilis!</p>
+                </div>
+                <div class="contribution">
+                    <span>MY CONTRIBUTION</span>
+                    <div class="txtBox">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae pariatur quo atque,</p>
+                    </div>
+                    <div class="txtBox">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae pariatur quo atque,</p>
+                    </div>
+                    <div class="txtBox">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. voluptatibus molestias accusamus odit, iure aspernatur tempore, corporis praesentium non exercitationem cum, nisi cupiditate laboriosam odio quas eligendi.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="overlay6" class="overlay-wrap">
+        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="content">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/pexels-magda-ehlers-pexels-2114014.jpg" loading="lazy" />
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-2.jpg" loading="lazy" />
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-3.jpg" loading="lazy" />
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-4.jpg" loading="lazy" />
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-5.jpg" loading="lazy" />
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-6.jpg" loading="lazy" />
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper(".content", {
+                lazy: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        </script>
+
+        <div class="dpbox details">
+            <div class="flex"> <!-- 첫번째 -->
+                <div class="box name"> 
+                    <h3>What's design</h3>
+                </div>
+                <div class="box link">
+                    <img src="img/link.png" alt="" >
+                    <img src="img/link hover.png" alt="" class="hoverimg">
+                </div>
+                <div class="box close">
+                    <img src="img/x.png" alt="">
+                    <img src="img/x hover.png" alt="" class="hoverimg">
+                </div>
+            </div>
+            <div class="box info"> <!-- 두번째 -->
+                <div class="infoBox">
+                <div class="company">
+                    <p>COMPANY</p>
+                    <h4>company</h4>
+                </div>
+                <div class="year">
+                    <p>YEAR</p>
+                    <h4>2024</h4>
+                </div>
+                <div class="type">
+                    <p>TYPE</p>
+                    <h4>app</h4>
+                </div>
+            </div>
+            </div>
+            <div class="box describe">
+                <div class="scrollBox">
+                <div class="overview">
+                    <span>OVERVIEW</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae pariatur quo atque voluptatibus molestias accusamus odit, iure aspernatur tempore, corporis praesentium non exercitationem cum, nisi cupiditate laboriosam odio quas eligendi. <br>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non voluptas harum deserunt, temporibus nemo laborum neque ipsum minus quod porro sint accusamus fugiat totam fugit animi, eaque quae vitae facilis!</p>
+                </div>
+                <div class="contribution">
+                    <span>MY CONTRIBUTION</span>
+                    <div class="txtBox">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae pariatur quo atque,</p>
+                    </div>
+                    <div class="txtBox">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae pariatur quo atque,</p>
+                    </div>
+                    <div class="txtBox">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. voluptatibus molestias accusamus odit, iure aspernatur tempore, corporis praesentium non exercitationem cum, nisi cupiditate laboriosam odio quas eligendi.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="overlay7" class="overlay-wrap">
+        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="content">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/pexels-magda-ehlers-pexels-2114014.jpg" loading="lazy" />
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-2.jpg" loading="lazy" />
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-3.jpg" loading="lazy" />
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-4.jpg" loading="lazy" />
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-5.jpg" loading="lazy" />
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-6.jpg" loading="lazy" />
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper(".content", {
+                lazy: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        </script>
+
+        <div class="dpbox details">
+            <div class="flex"> <!-- 첫번째 -->
+                <div class="box name"> 
+                    <h3>What's design</h3>
+                </div>
+                <div class="box link">
+                    <img src="img/link.png" alt="" >
+                    <img src="img/link hover.png" alt="" class="hoverimg">
+                </div>
+                <div class="box close">
+                    <img src="img/x.png" alt="">
+                    <img src="img/x hover.png" alt="" class="hoverimg">
+                </div>
+            </div>
+            <div class="box info"> <!-- 두번째 -->
+                <div class="infoBox">
+                <div class="company">
+                    <p>COMPANY</p>
+                    <h4>company</h4>
+                </div>
+                <div class="year">
+                    <p>YEAR</p>
+                    <h4>2024</h4>
+                </div>
+                <div class="type">
+                    <p>TYPE</p>
+                    <h4>app</h4>
+                </div>
+            </div>
+            </div>
+            <div class="box describe">
+                <div class="scrollBox">
+                <div class="overview">
+                    <span>OVERVIEW</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae pariatur quo atque voluptatibus molestias accusamus odit, iure aspernatur tempore, corporis praesentium non exercitationem cum, nisi cupiditate laboriosam odio quas eligendi. <br>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non voluptas harum deserunt, temporibus nemo laborum neque ipsum minus quod porro sint accusamus fugiat totam fugit animi, eaque quae vitae facilis!</p>
+                </div>
+                <div class="contribution">
+                    <span>MY CONTRIBUTION</span>
+                    <div class="txtBox">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae pariatur quo atque,</p>
+                    </div>
+                    <div class="txtBox">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae pariatur quo atque,</p>
+                    </div>
+                    <div class="txtBox">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. voluptatibus molestias accusamus odit, iure aspernatur tempore, corporis praesentium non exercitationem cum, nisi cupiditate laboriosam odio quas eligendi.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="playground.js"></script>
+    <script>
+        var swiper = new Swiper(".content", {
+            lazy: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+    <!-- aboutme -->
+    <div class="about_wrap">
+        <div class="num">
+            <img src="img/03.png" alt=""></div>
+            <div class="container">
+            <div data-aos="flip-up" data-aos-delay="200" class="title">
+                <h1 class="select">ABOUT</h1>
+                <img src="img/object03.png" alt="">
+                <h1 class="WORK">ME</h1>
+            </div>
+        <div class="grid">
+            <div class="box info">
+                <div class="text">
+                    <p>There is a saying, 
+                        'Good design is not about what you can add, 
+                        but about what you can remove.' 
+                        In line with this, I will create designs 
+                        that are not only aesthetically pleasing 
+                        but also practically essential, based on data.</p>
+                </div>
+            <div class="conFlex">
+                <div class="contact">
+                    <ul>
+                        <li class="box"><a href=""><img src="img/telephone.png" alt=""></a></li>
+                        <li class="box"><a href=""><img src="img/envelope.png" alt=""></a></li>
+                        <li class="box"><a href=""><img src="img/instagram.png" alt=""></a></li>
+                        <li class="box"><a href=""><img src="img/behance.png" alt=""></a></li>
+                    </ul>
+                </div>
+                    <button class="box resume">Resume <img src="img/download.png" alt=""></button>
+            </div>
+            
+            </div>
+                <div class="box single-card">
+                    <div class="front"></div>
+                    <div class="back">
+                        <div class="content">
+                        </div>
+                    </div>
+                </div>
+            <div class="box edu">
+                <div class="inner">
+                    <span class="tit">
+                        EDUCATION
+                    </span>
+                    <div class="flex">
+                    <div class="year">
+                        <p>2023 - Now</p>
+                        <p>2020 - 2023</p>
+                    </div>
+                    <div class="detail">
+                        <p><span>시각디자인 디지털디자인과</span><br>
+                        한국폴리텍대학교 정수캠퍼스</p>
+                        <p><span>영상 미디어과</span><br>
+                        서울영상고등학교</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="box awards">
+                <div class="inner">
+                    <span class="tit">
+                        AWARDS
+                    </span>
+                    <div class="flex">
+                    <div class="year">
+                        <p>2023</p>
+                    </div>
+                    <div class="detail">
+                        <p><span>동아리 우수상 - 은상, 배봉정</span><br>
+                        한국폴리텍대학교 정수캠퍼스</p>
+                        <p><span>동아리 우수상 - 동상, 배봉정</span><br>
+                        한국폴리텍대학교 정수캠퍼스</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="box tool">
+                <div class="inner">
+                    <span class="tit">
+                        TOOL STACK
+                    </span>
+                    <ul>
+                        <li><img src="img/figma.png" alt=""></li>
+                        <li><img src="img/ps.png" alt=""></li>
+                        <li><img src="img/ai.png" alt=""></li>
+                        <li><img src="img/id.png" alt=""></li>
+                        <li><img src="img/3dmax.jpg" alt=""></li>
+                        <li><img src="img/maya.jpg" alt=""></li>
+                        <li><img src="img/GPT-4.png" alt=""></li>
+                        <li><img src="img/vs.png" alt=""></li>
+                        <li><img src="img/word.png" alt=""></li>
+                        <li><img src="img/excel.png" alt=""></li>
+                        <li><img src="img/powerpoint.png" alt=""></li>
+                        <li><img src="img/notion.png" alt=""></li>
+                        <li><img src="img/colab.jpg" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer_wrap">
+        <div class="inner">
+            <div data-aos="fade-up" data-aos-duration="1000" class="topbtn">
+                <a href="#" id="scrollToTop"><i class="fa-solid fa-arrow-up-long" style="color: #ffffff;"></i></a>
+            </div>
+            <div class="footer_box">
+            <div class="rights">
+                <p>©2024 Mingyeong Kim.<br>
+                    All Rights Reserved.</p>
+            </div>
+            <div class="contact">
+            <ul>
+                <li><a href=""><img src="img/telephone.png" alt=""></a></li>
+                <li><a href=""><img src="img/envelope.png" alt=""></a></li>
+                <li><a href=""><img src="img/instagram.png" alt=""></a></li>
+                <li><a href=""><img src="img/behance.png" alt=""></a></li>
+            </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // 스크롤 탑 버튼 클릭 이벤트
+        document.getElementById('scrollToTop').addEventListener('click', function(e) {
+            e.preventDefault(); // 기본 앵커 태그 동작을 막음
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    
+        // 스크롤 링크 클릭 이벤트
+        document.querySelectorAll('.scroll-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('data-target'));
+                target.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    
+        // AOS 초기화
+        AOS.init();
+    
+        // AOS 속성 제거 함수
+        function removeAOSAttributes() {
+            const topBtn = document.querySelector('.topbtn');
+            if (window.innerWidth <= 393) {
+                topBtn.removeAttribute('data-aos');
+                topBtn.removeAttribute('data-aos-duration');
+            }
+        }
+    
+        // 페이지 로드 시 AOS 속성 제거 실행
+        removeAOSAttributes();
+    
+        // 창 크기 변경 시 AOS 속성 제거 실행
+        window.addEventListener('resize', removeAOSAttributes);
+    </script>
+</body>
+</html>

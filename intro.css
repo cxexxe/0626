@@ -1,0 +1,374 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans KR", sans-serif;
+}
+html{ scroll-behavior: smooth;}
+
+ul li{
+    list-style: none;
+    float: left;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    color: #fff;
+}
+/* 기본 셋팅 */
+.space{
+    width: 100%;
+    height: 5vw;
+    background-color: #000;
+}
+.intro_wrap{
+    background-image: linear-gradient(to bottom, #000, #37393A);
+    width: 100%;
+    padding: 0 60px;
+    /* outline: solid 1px red; */
+}
+.motion{
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.motion .txt{
+    position: absolute;
+    left: 0%;
+}
+.motion .txt h1{
+    font-size: 10vw;
+    z-index: 5;
+    line-height: 1.2;
+    font-family: "Notable", sans-serif;
+    font-weight: 400;
+    
+}
+.motion video{
+    width: 100%;
+    height: 38vw;
+    /* outline: solid 1px red; */
+}
+.intro_wrap .based{
+    /* outline: solid 1px red; */
+    font-size: 1vw;
+    font-weight: 500;
+    width: fit-content;
+    height: fit-content;
+}
+.scroll-downs{
+    /* outline: solid 1px red; */
+    width: 10vw;
+    height: fit-content;
+    margin: auto;
+    text-align: center;
+}
+.scroll-downs p{
+    color: #9F9F9F;
+    font-size: 1vw;
+}
+.scroll-downs img {
+    height: 3vw;
+    width: auto;
+    line-height: 60px;
+}
+
+.bounce {
+animation-iteration-count: infinite;
+animation-duration: 1.5s;
+animation: bounce 3.6s ease infinite;
+transform-origin: 50% 50%;
+}
+
+@keyframes bounce {
+0% {
+    transform: translateY(0);
+}
+5.55556% {
+    transform: translateY(0);
+}
+11.11111% {
+    transform: translateY(0);
+}
+22.22222% {
+    transform: translateY(-15px);
+}
+27.77778% {
+    transform: translateY(0);
+}
+33.33333% {
+    transform: translateY(-15px);
+}
+44.44444% {
+    transform: translateY(0);
+}
+100% {
+    transform: translateY(0);
+}
+}
+
+.intro_wrap .comment_box{
+    display: block;
+    width: 42%;
+    word-break: break-all;
+    margin-top: 10vw;
+    
+}
+.intro_wrap .comment{
+    height: fit-content;
+    /* outline: solid 1px red; */
+}
+.intro_wrap .comment_box h2{
+    font-size: 2.7vw;
+    font-weight: bold;
+/*     margin-bottom: 50px; */
+    margin-bottom: 2vw;
+}
+.intro_wrap .contact{
+    width: 15vw;
+    height: fit-content;
+    height: 3vw;
+    /* outline: solid 1px rgb(17, 0, 255); */
+    margin-bottom: 2vw;
+    
+}
+.intro_wrap .contact ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.intro_wrap .contact ul li{
+    border-radius: 50%;
+    background-color: #474848;
+    border: solid 0.2px #848484;
+    width: 3vw;
+    height: 3vw;
+    position: relative;
+    cursor: pointer;
+}
+.intro_wrap .contact ul li:hover{
+    background-color: #000;
+    transition: 1s;
+}
+.intro_wrap .contact ul li a img{
+    /* width: 28px; */
+    width: 1.3vw;
+    position: absolute;
+    margin: auto;
+    top: 0; bottom: 0; left: 0; right: 0;
+    opacity: 0.8;
+}
+
+
+.intro_wrap .btn{
+    background-color: #000;
+    width: 11vw;
+    height: 3.5vw;
+    color: #fff;
+    border: none 0;
+    border-radius: 100px;
+    font-weight: 500;
+    font-size: 1.3vw;
+    cursor: pointer;
+}
+.intro_wrap .btn a{
+    color: #fff;
+}
+.intro_wrap .btn:hover{
+    background-color: #5f5f5f;
+    transition: 1s;
+    color: #fff;
+}
+
+/* js */
+
+.motion .txt{
+    position: absolute;
+    left: 0%;
+    width: max-content;
+    height: max-content;
+}
+.motion .txt h1{
+    font-size: 10vw;
+    z-index: 5;
+    line-height: 1.2;
+    font-weight: 900;
+}
+.hi{
+    top: 1vw;
+    /* background-color: orange; */
+}
+.im{
+    top: 11vw;
+    /* background-color: gray; */
+}
+.min{
+    top: 21vw;
+    /* background-color: green; */
+}
+
+/* 모바일 */
+@media screen and (max-width:393px){
+    .space{
+        width: 100%;
+        height: 15vw;
+        background-color: #000;
+    }
+    /* 모션 */
+    .intro_wrap{
+        padding: 15px;
+    }
+    .motion .txt{
+        z-index: 5;
+    }
+    .motion .txt h1{
+        font-size: 15vw;
+    }
+    .hi{
+        top: 5vw;
+    }
+    .im{
+        top: 22vw;
+    }
+    .min{
+        top: 39vw;
+    }
+    .motion {
+        position: relative;
+        width: 100%;
+        height: 80vw;
+        overflow: hidden;
+    }
+    .motion video {
+        position: absolute;
+        top: 42%;
+        left: 50%;
+        width: 150vw;
+        height: 80vw;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+    }
+    /* 코멘트 */
+    .intro_wrap .comment_box{
+        width: 100%;
+    }
+    .intro_wrap .comment_box h2{
+        font-size: 4vw;
+    }
+    .intro_wrap .based{
+        margin-top: -10vw;
+        font-size: 2.5vw;
+    }
+    .scroll-downs{
+        /* outline: solid 1px red; */
+        width: 20vw;
+        height: 10vw;
+        margin-top: 5vw;
+    }
+    .scroll-downs p{
+        font-size: 3vw;
+    }
+    .scroll-downs img {
+        height: 5vw;
+        width: auto;
+        margin-top: 1vw;
+    }
+    .intro_wrap .contact{
+        width: 50%;
+    }
+    .intro_wrap .contact ul li {
+        width: 20px; /* 고정된 너비 */
+        height: 20px; /* 고정된 높이 */
+        border: none
+    }
+
+    .intro_wrap .contact ul li a img{
+        width: 10px; /* 고정된 너비 */
+        position: absolute;
+    }
+    /* 버튼 */
+    .intro_wrap .btn_wrap{
+        width: 100%;
+        text-align: right;
+    }
+    .intro_wrap .btn{
+        width: 30vw;
+        height: 10vw;
+        font-size: 3.2vw;
+    }
+
+    .intro_wrap .comment_box h2{
+        margin-bottom: 5vw;
+    }
+
+    .intro_wrap .contact{
+        width: 40vw;
+        height: fit-content;
+        height: 8vw;
+        /* outline: solid 1px rgb(17, 0, 255); */
+        margin-bottom: 2vw;
+        
+    }
+    .intro_wrap .contact ul{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .intro_wrap .contact ul li{
+        border-radius: 50%;
+        background-color: #474848;
+        border: solid 0.2px #848484;
+        width: 8vw;
+        height: 8vw;
+        position: relative;
+        cursor: pointer;
+    }
+    .intro_wrap .contact ul li:hover{
+        background-color: #000;
+        transition: 1s;
+    }
+    .intro_wrap .contact ul li a img{
+        /* width: 28px; */
+        width: 4vw;
+        position: absolute;
+        margin: auto;
+        top: 0; bottom: 0; left: 0; right: 0;
+        opacity: 0.8;
+    }
+
+
+    @keyframes bounce {
+        0% {
+            transform: translateY(0);
+        }
+        5.55556% {
+            transform: translateY(0);
+        }
+        11.11111% {
+            transform: translateY(0);
+        }
+        22.22222% {
+            transform: translateY(-8px);
+        }
+        27.77778% {
+            transform: translateY(0);
+        }
+        33.33333% {
+            transform: translateY(-8px);
+        }
+        44.44444% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(0);
+        }
+        }
+}
